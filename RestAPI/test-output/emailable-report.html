@@ -31,35 +31,19 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">4.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">4.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Default test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">Qwerty.qwerty.RestApi</td><td><a href="#m1"><b>restBody</b>  </a></td><td class="numi">1</td><td>1542110338590</td><td class="numi">4270</td></tr>
+<tr class="failedodd"><td rowspan="1">Qwerty.qwerty.RestApi</td><td><a href="#m1"><b>restBody</b>  </a></td><td class="numi">1</td><td>1542257421138</td><td class="numi">4370</td></tr>
 </table>
 <h1>Default test</h1>
 <h2 id="m1">Qwerty.qwerty.RestApi:restBody</h2>
 <div style="padding-left:3em">
-<p>Failed to parse the JSON document</p>
-io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:930)
-<br/>at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:895)
-<br/>at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:975)
-<br/>at io.restassured.path.json.JsonPath.get(JsonPath.java:201)
-<br/>at Qwerty.qwerty.RestApi.restBody(RestApi.java:65)
-<br/>25 lines not shown
-<p>Caused by Lexing failed on line: 1, column: 1, while reading &apos;c&apos;, no possible valid JSON value or punctuation could be recognized.</p>
-groovy.json.JsonLexer.nextToken(JsonLexer.java:87)
-<br/>at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-<br/>at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-<br/>at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-<br/>at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-<br/>at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:893)
-<br/>at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:928)
-<br/>at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:895)
-<br/>at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:975)
-<br/>at io.restassured.path.json.JsonPath.get(JsonPath.java:201)
-<br/>at Qwerty.qwerty.RestApi.restBody(RestApi.java:65)
+<p>JSONArray initial value should be a string or collection or array.</p>
+org.json.JSONArray.&lt;init&gt;(JSONArray.java:182)
+<br/>at Qwerty.qwerty.RestApi.restBody(RestApi.java:147)
 <br/>25 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>

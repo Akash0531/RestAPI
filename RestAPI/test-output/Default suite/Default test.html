@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 13 17:28:58 IST 2018</td>
+<td>Started on:</td><td>Thu Nov 15 10:20:21 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4286 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4392 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,12 +76,9 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Qwerty.qwerty.RestApi.restBody()'><b>restBody</b><br>Test class: Qwerty.qwerty.RestApi</td>
-<td><div><pre>io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:930)
-	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:895)
-	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:975)
-	at io.restassured.path.json.JsonPath.get(JsonPath.java:201)
-	at Qwerty.qwerty.RestApi.restBody(RestApi.java:65)
+<td><div><pre>org.json.JSONException: JSONArray initial value should be a string or collection or array.
+	at org.json.JSONArray.&lt;init&gt;(JSONArray.java:182)
+	at Qwerty.qwerty.RestApi.restBody(RestApi.java:147)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -106,22 +103,10 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;c&apos;, no possible valid JSON value or punctuation could be recognized.
-	at groovy.json.JsonLexer.nextToken(JsonLexer.java:87)
-	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:893)
-	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:928)
-	... 28 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace809383315", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace809383315'><pre>io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:930)
-	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:895)
-	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:975)
-	at io.restassured.path.json.JsonPath.get(JsonPath.java:201)
-	at Qwerty.qwerty.RestApi.restBody(RestApi.java:65)
+</pre></div><a href='#' onClick='toggleBox("stack-trace145329976", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace145329976'><pre>org.json.JSONException: JSONArray initial value should be a string or collection or array.
+	at org.json.JSONArray.&lt;init&gt;(JSONArray.java:182)
+	at Qwerty.qwerty.RestApi.restBody(RestApi.java:147)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -146,18 +131,9 @@ Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;c&apos;, no possible valid JSON value or punctuation could be recognized.
-	at groovy.json.JsonLexer.nextToken(JsonLexer.java:87)
-	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:893)
-	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:928)
-	... 28 more
 </pre></div></td>
 <td>4</td>
-<td>Qwerty.qwerty.RestApi@3fee9989</td></tr>
+<td>Qwerty.qwerty.RestApi@1725dc0f</td></tr>
 </table><p>
 </body>
 </html>

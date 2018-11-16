@@ -2,23 +2,20 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4286" started-at="2018-11-13T11:58:58Z" finished-at="2018-11-13T11:59:02Z">
+  <suite name="Default suite" duration-ms="4392" started-at="2018-11-15T04:50:21Z" finished-at="2018-11-15T04:50:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4286" started-at="2018-11-13T11:58:58Z" finished-at="2018-11-13T11:59:02Z">
+    <test name="Default test" duration-ms="4392" started-at="2018-11-15T04:50:21Z" finished-at="2018-11-15T04:50:25Z">
       <class name="Qwerty.qwerty.RestApi">
-        <test-method status="FAIL" signature="restBody()[pri:0, instance:Qwerty.qwerty.RestApi@3fee9989]" name="restBody" duration-ms="4270" started-at="2018-11-13T17:28:58Z" finished-at="2018-11-13T17:29:02Z">
-          <exception class="io.restassured.path.json.exception.JsonPathException">
+        <test-method status="FAIL" signature="restBody()[pri:0, instance:Qwerty.qwerty.RestApi@1725dc0f]" name="restBody" duration-ms="4370" started-at="2018-11-15T10:20:21Z" finished-at="2018-11-15T10:20:25Z">
+          <exception class="org.json.JSONException">
             <message>
-              <![CDATA[Failed to parse the JSON document]]>
+              <![CDATA[JSONArray initial value should be a string or collection or array.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:930)
-	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:895)
-	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:975)
-	at io.restassured.path.json.JsonPath.get(JsonPath.java:201)
-	at Qwerty.qwerty.RestApi.restBody(RestApi.java:65)
+              <![CDATA[org.json.JSONException: JSONArray initial value should be a string or collection or array.
+	at org.json.JSONArray.<init>(JSONArray.java:182)
+	at Qwerty.qwerty.RestApi.restBody(RestApi.java:147)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -43,18 +40,9 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading 'c', no possible valid JSON value or punctuation could be recognized.
-	at groovy.json.JsonLexer.nextToken(JsonLexer.java:87)
-	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:893)
-	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:928)
-	... 28 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.restassured.path.json.exception.JsonPathException -->
+          </exception> <!-- org.json.JSONException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- restBody -->
