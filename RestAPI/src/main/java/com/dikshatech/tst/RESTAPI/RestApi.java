@@ -1,6 +1,5 @@
 package com.dikshatech.tst.RESTAPI;
 
-import org.json.simple.JSONObject;
 import org.json.simple.JsonObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -44,16 +43,18 @@ public class RestApi {
 	/**
 	 * Method to convert XML to JSON and validate the key components value.
 	 **/
+	@SuppressWarnings("rawtypes")
 	@Test(priority = 1, enabled = true)
 	public static void loginAPI() {
 		RestAssured.urlEncodingEnabled = false;
 
-		Response exResp = RestAssured.get(apiURL);
-		ResponseBody respbody1 = exResp.getBody();
-		String TEST_XML_STRING = respbody1.asString();
-		org.json.JSONObject xmlJSONObj = XML.toJSONObject(TEST_XML_STRING);
-		String lastName = xmlJSONObj.getJSONObject("actionForm").getString("lastName");
-		logger.info("Lastname of the logged in user is " + lastName);
+		Response response = RestAssured.get(apiURL);
+		ResponseBody respbody = response.getBody();
+		String stringResponse = respbody.asString();
+		org.json.JSONObject xmlJSONObj = XML.toJSONObject(stringResponse);
+		String userName = xmlJSONObj.getJSONObject("actionForm").getString("userName");
+		logger.info("Username of the logged in user is " + userName);
+		Assert.assertEquals(userName, "Bharat Raj D");
 	}
 
 	/**
@@ -73,10 +74,10 @@ public class RestApi {
 
 		JsonPath jsonPathEvaluator = response.jsonPath();
 
-		String value = jsonPathEvaluator.get("City");
+		String city = jsonPathEvaluator.get("City");
 
-		logger.info(value);
-		Assert.assertEquals(value, "Hyderabad");
+		logger.info("City name is "+city);
+		Assert.assertEquals(city, "Hyderabad");
 	}
 
 	/**
@@ -92,18 +93,18 @@ public class RestApi {
 	/**
 	 * Method to convert XML to JSON with an proper Indentation
 	 **/
-	@Test(priority = 3, enabled = false)
+	@Test(priority = 3, enabled = true)
 	public static void jsonData() {
 		RestAssured.urlEncodingEnabled = false;
 
 		RequestSpecification request = RestAssured.given();
 		Response response = request.get(apiURL);
 		ResponseBody respbody = response.getBody();
-		int PRETTY_PRINT_INDENT_FACTOR = 4;
-		String TEST_XML_STRING = respbody.asString();
-		org.json.JSONObject xmlJSONObj = XML.toJSONObject(TEST_XML_STRING);
+		int indentFACTOR = 4;
+		String stringResponse = respbody.asString();
+		org.json.JSONObject xmlJSONObj = XML.toJSONObject(stringResponse);
 		logger.info(xmlJSONObj);
-		String jsonString = xmlJSONObj.toString(PRETTY_PRINT_INDENT_FACTOR);
+		String jsonString = xmlJSONObj.toString(indentFACTOR);
 		logger.info(jsonString);
 	}
 
