@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8313" started-at="2018-11-16T14:31:18Z" finished-at="2018-11-16T14:31:26Z">
+  <suite name="Default suite" duration-ms="8891" started-at="2018-11-22T05:46:10Z" finished-at="2018-11-22T05:46:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8313" started-at="2018-11-16T14:31:18Z" finished-at="2018-11-16T14:31:26Z">
-      <class name="com.dikshatech.tst.RESTAPI.RestApi">
-        <test-method status="PASS" signature="getloginStatus()[pri:0, instance:com.dikshatech.tst.RESTAPI.RestApi@49fc609f]" name="getloginStatus" duration-ms="2753" started-at="2018-11-16T20:01:18Z" finished-at="2018-11-16T20:01:21Z">
+    <test name="Default test" duration-ms="8891" started-at="2018-11-22T05:46:10Z" finished-at="2018-11-22T05:46:19Z">
+      <class name="com.dikshatech.tst.ObjectRepository.RestApi">
+        <test-method status="PASS" signature="getloginStatus()[pri:0, instance:com.dikshatech.tst.ObjectRepository.RestApi@49fc609f]" name="getloginStatus" duration-ms="2870" started-at="2018-11-22T11:16:10Z" finished-at="2018-11-22T11:16:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getloginStatus -->
-        <test-method status="PASS" signature="loginAPI()[pri:0, instance:com.dikshatech.tst.RESTAPI.RestApi@49fc609f]" name="loginAPI" duration-ms="2442" started-at="2018-11-16T20:01:21Z" finished-at="2018-11-16T20:01:23Z">
+        <test-method status="PASS" signature="loginAPI()[pri:0, instance:com.dikshatech.tst.ObjectRepository.RestApi@49fc609f]" name="loginAPI" duration-ms="2113" started-at="2018-11-22T11:16:13Z" finished-at="2018-11-22T11:16:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAPI -->
-        <test-method status="PASS" signature="weatherResponse()[pri:0, instance:com.dikshatech.tst.RESTAPI.RestApi@49fc609f]" name="weatherResponse" duration-ms="1397" started-at="2018-11-16T20:01:23Z" finished-at="2018-11-16T20:01:25Z">
+        <test-method status="PASS" signature="weatherResponse()[pri:0, instance:com.dikshatech.tst.ObjectRepository.RestApi@49fc609f]" name="weatherResponse" duration-ms="1627" started-at="2018-11-22T11:16:15Z" finished-at="2018-11-22T11:16:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- weatherResponse -->
-        <test-method status="PASS" signature="jsonData()[pri:0, instance:com.dikshatech.tst.RESTAPI.RestApi@49fc609f]" name="jsonData" duration-ms="1706" started-at="2018-11-16T20:01:25Z" finished-at="2018-11-16T20:01:26Z">
+        <test-method status="PASS" signature="jsonData()[pri:0, instance:com.dikshatech.tst.ObjectRepository.RestApi@49fc609f]" name="jsonData" duration-ms="2265" started-at="2018-11-22T11:16:17Z" finished-at="2018-11-22T11:16:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jsonData -->
-      </class> <!-- com.dikshatech.tst.RESTAPI.RestApi -->
+      </class> <!-- com.dikshatech.tst.ObjectRepository.RestApi -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

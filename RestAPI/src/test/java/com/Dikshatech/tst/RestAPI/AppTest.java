@@ -1,4 +1,4 @@
-package Qwerty.qwerty;
+package com.Dikshatech.tst.RestAPI;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

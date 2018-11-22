@@ -1,4 +1,4 @@
-package com.dikshatech.tst.RESTAPI;
+package com.dikshatech.tst.ObjectRepository;
 
 import org.json.simple.JsonObject;
 import org.testng.Assert;
