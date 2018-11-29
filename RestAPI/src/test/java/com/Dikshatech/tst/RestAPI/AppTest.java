@@ -1,14 +1,16 @@
 package com.Dikshatech.tst.RestAPI;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
+public class AppTest
 {
     /**
      * Create the test case
@@ -17,22 +19,14 @@ public class AppTest
      */
     public AppTest( String testName )
     {
-        super( testName );
-    }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
     }
 
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
+    @Test
+	public void testApp()
     {
-        assertTrue( true );
+        AssertJUnit.assertTrue( true );
     }
 }
